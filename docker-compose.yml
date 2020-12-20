@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+ jupyter-algorithms:
+   build:
+     context: .
+   ports:
+     - "8888:8888"
+   volumes:
+     - ./Notes:/home/jovyan/work
+   container_name:   datascience-notebook-container
